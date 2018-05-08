@@ -28,13 +28,10 @@ function makeInt(n) {
 }
 
 function preserveDecimal(n) {
-  var parsed = parseFloat(n, 10) 
-}
-
-
-function roughScale(x, base) {
-  var parsed = parseInt(x, base);
-  if (isNaN(parsed)) { return 0 }
-  return parsed * 100;
+  var parsed = parseFloat(n, 10);
+  if (isNan(parsed)) {
+    return 0;
+  }
+  return parsed;
 }
 
